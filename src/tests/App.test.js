@@ -4,6 +4,7 @@ import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 import { mount } from "enzyme";
 import App from "../App";
 import Card from "../Components/Card.jsx";
+import OutlinedCard from "../Components/OutlinedCard.jsx";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -19,5 +20,9 @@ describe("<App />", () => {
 
   it("renders Card component", () => {
     expect(wrapper.exists(Card)).toBe(true);
+  });
+
+  it("renders OutlineCard component", () => {
+    expect(wrapper.exists(OutlinedCard)).toBe(true);
   });
 });

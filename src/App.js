@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Card from "./Components/Card";
+import OutlinedCard from "./Components/OutlinedCard.jsx";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         Card Component made with React
       </h1>
       <Card />
+      <OutlinedCard />
     </>
   );
 };
