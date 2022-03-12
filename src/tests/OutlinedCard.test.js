@@ -12,6 +12,10 @@ describe("<OutlinedCard />", () => {
     wrapper = shallow(<OutlinedCard />);
   });
 
+  it("renders an h2 tag with 'Outlined Card' title", () => {
+    expect(wrapper.find("h2").text()).toContain("Outlined Card");
+  });
+
   it("renders a div with card id", () => {
     expect(wrapper.exists("#outlined-card")).toBe(true);
   });
