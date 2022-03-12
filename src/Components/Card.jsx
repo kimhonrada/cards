@@ -12,7 +12,7 @@ const Card = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
         </p>
         <div className="px-6 pt-4 pb-2">
-          <button className="inline-blockpx-3 py-1 mr-2 mb-2 text-blue-600 underline text-sm">Learn More</button>
+          <button className="inline-block px-3 py-1 mr-2 mb-2 text-blue-600 underline text-sm">Learn More</button>
         </div>
       </div>
     </>
