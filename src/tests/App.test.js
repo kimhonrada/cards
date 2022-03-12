@@ -5,6 +5,7 @@ import { mount } from "enzyme";
 import App from "../App";
 import Card from "../Components/Card.jsx";
 import OutlinedCard from "../Components/OutlinedCard.jsx";
+import ComplexCard from "../Components/ComplexCard.jsx";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -24,5 +25,9 @@ describe("<App />", () => {
 
   it("renders OutlineCard component", () => {
     expect(wrapper.exists(OutlinedCard)).toBe(true);
+  });
+
+  it("renders a ComplexCard component", () => {
+    expect(wrapper.exists(ComplexCard)).toBe(true);
   });
 });

@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import Card from "./Components/Card";
-import OutlinedCard from "./Components/OutlinedCard.jsx";
+import OutlinedCard from "./Components/OutlinedCard";
+import ComplexCard from "./Components/ComplexCard";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <div className='flex flex-col space-y-10 py-10 px-10'>
         <Card />
         <OutlinedCard />
+        <ComplexCard />
       </div>
     </>
   );

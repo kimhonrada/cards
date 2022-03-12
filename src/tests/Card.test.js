@@ -1,7 +1,7 @@
 import Enzyme from "enzyme";
 import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 
-import { mount, shallow } from "enzyme";
+import { shallow } from "enzyme";
 import Card from "../Components/Card.jsx";
 
 Enzyme.configure({ adapter: new Adapter() });
