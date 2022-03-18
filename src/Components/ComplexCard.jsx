@@ -40,7 +40,7 @@ const ComplexCard = () => {
             <button onClick={handleExpand} id='expand' className="inline-block px-3 py-1 mr-2 mb-2 text-blue-500 rounded-full text-sm">Expand</button>
           </div>
         </div>
-        <div className="transistion-all">
+        <div>
           {expand &&
             <p className="px-6 py-3">You may embed expressions in JSX by wrapping them in curly braces. This includes the JavaScript logical && operator. It can be handy for conditionally including an element:</p>
           }
