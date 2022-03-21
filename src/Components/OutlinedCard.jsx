@@ -1,7 +1,6 @@
 import React from 'react';
 
 const OutlinedCard = () => {
-  // testing git
   return (
     <>
       <h2 className="text-xl bold underline dark:text-zinc-200">Outlined Card</h2>
