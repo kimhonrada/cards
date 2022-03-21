@@ -1,9 +1,19 @@
 import React, { useState } from 'react'
+import { FaToggleOff, FaToggleOn } from 'react-icons/fa'
 
-const DarkMode = () => {
+const DarkMode = ({ toggleDarkMode }) => {
+  const [toggle, setToggle] = useState(false)
+
+  const handleDarkMode = () => {
+    toggle ? setToggle(false) : setToggle(true)
+  }
+
   return (
     <>
-      <button className="inline-blockpx-3 py-1 mr-2 mb-2">Dark mode?</button>
+      <span>
+        Dark Mode?
+      </span>
+      {toggle ? <FaToggleOn onClick={() => handleDarkMode()} /> : <FaToggleOff onClick={() => handleDarkMode()} />}
     </>
   )
 }
